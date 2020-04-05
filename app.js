@@ -9,6 +9,10 @@ app.get("/user/login", function(req, res) {
   res.render("login");
 });
 
+app.get("/user/signup",function(req,res) {
+	res.render("signup");
+});
+
 app.listen(process.env.PORT, function() {
   console.log("server started");
 });
